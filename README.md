@@ -1,6 +1,10 @@
 # Simple standard library
 Is a single header file library for : better string handling, and also comes with a lot of math related functions.
 
+## How to use
+All functions are related to a specific type, example :
+If I want to convert an integer to a string, the function name would be : i_ToStr.
+
 ### Modularity
 You can remove whatever you don't want with a simple #define :
 - SSTDLIB_NO_MATH : remove all math functions
