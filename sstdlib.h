@@ -239,7 +239,7 @@ int s_add(string *src,const string str)
 	}
 }
 
-//backward : if false goes, clear from right to left, else from left to right
+//backward : if false, clear from right to left, else from left to right
 // ClearChar : With what character should the string be cleared with ?
 int s_Clear(string *src,const int steps,const bool backward,const char ClearChar)
 {
