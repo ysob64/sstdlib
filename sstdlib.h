@@ -853,10 +853,10 @@ float f_sqrtP(const float src,const float precision)
 
 //(copy past from the double version)
 //hex number table for square roots :
-// 0x1FF7800000000000 : for more accuracy on power of 5 (100% accuracy for 25, then 98,948689959% for 625, ...)
-// 0x1FF8000000000000 : (same) for power of 2 (great for floats as returns within its range of max value)
-// 0x1FF7000000000000 : (same) power of 3 (looks like great for float too but I wouldn't bet)
-// 0x1FF7C00000000000 : (same) power of 7
+// 0x1FC00000 : for more accuracy on power of 5 (100% accuracy for 25, then 98,948689959% for 625, ...)
+// 0x1FC00000 : (same) for power of 2 (great for floats as returns within its range of max value)
+// 0x1FB40000 : (same) power of 3 (looks like great for float too but I wouldn't bet)
+// 0x1FBE0000 : (same) power of 7
 // I precise POWER an NOT multiple, only with powers of x you will get the closest (if not 100% accurate) square root
 float f_fastSqrt(const float src)
 {
