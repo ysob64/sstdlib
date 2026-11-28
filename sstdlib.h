@@ -60,6 +60,7 @@ typedef struct poweriData
 // A v_memcopy copy for avoiding the inclusion of string.h
 void *v_memcopy(void *dest, const void *src, int len)
 {
+  if(dest == NULL || src == NULL) return NULL;
   if(sizeof(dest[0]) != sizeof(src[0])) return NULL;
 
   switch(sizeof(dest[0]))
